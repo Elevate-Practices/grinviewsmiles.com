@@ -367,3 +367,8 @@ a.ach:hover{border-color:var(--primary);color:var(--text)}
 .plan .ticks{margin:0}.plan .ticks li{font-size:.95rem}
 @media (max-width:860px){.plans{grid-template-columns:1fr}}
 .center{text-align:center}
+
+/* in-network insurance plans */
+.ins-grid{list-style:none;padding:0!important;margin:14px 0 18px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.ins-grid li{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 10px;text-align:center;font-weight:700;color:var(--deep);margin:0}
+@media (max-width:640px){.ins-grid{grid-template-columns:1fr 1fr}}
