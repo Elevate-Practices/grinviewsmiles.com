@@ -356,3 +356,14 @@ a.ach:hover{border-color:var(--primary);color:var(--text)}
 .vt .vid-play .ic{width:52px;height:52px}
 @media (max-width:860px){.vgrid{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.vgrid{grid-template-columns:1fr}}
+
+/* membership plan cards (same plans as Polished) */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0 10px}
+.plan{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:var(--shadow)}
+.plan h3{margin:0 0 6px}
+.plan-price{margin:0;color:var(--deep)}.plan-price b{font-size:2.1rem;font-weight:800}.plan-price span{color:var(--muted);margin-left:3px}
+.plan-who{color:var(--accent-text);font-weight:700;margin:2px 0 14px}
+.plan-hi{background:var(--deep);color:#fff;border-color:var(--deep)}.plan-hi h3,.plan-hi .plan-price{color:#fff}.plan-hi .plan-price span{color:var(--tint)}.plan-hi .plan-who{color:var(--tint)}.plan-hi .ticks .ic{color:var(--accent)}
+.plan .ticks{margin:0}.plan .ticks li{font-size:.95rem}
+@media (max-width:860px){.plans{grid-template-columns:1fr}}
+.center{text-align:center}
