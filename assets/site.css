@@ -58,8 +58,8 @@ a:hover .ic.arr{transform:translateX(3px)}
 .util a{color:#fff;text-decoration:none}
 .util a:hover{text-decoration:underline;color:#fff}
 .top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.top-in{display:flex;align-items:center;gap:18px;min-height:76px}
-.brand img{width:190px;height:auto}
+.top-in{display:flex;align-items:center;gap:18px;min-height:92px}
+.brand img{width:215px;height:auto}
 .nav{display:flex;gap:4px;margin-left:auto}
 .nav a{color:var(--text);text-decoration:none;font-weight:600;font-size:.95rem;padding:8px 10px;border-radius:999px;white-space:nowrap}
 .nav a:hover,.nav a[aria-current]{background:var(--bg);color:var(--deep)}
