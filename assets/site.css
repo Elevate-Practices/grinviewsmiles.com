@@ -71,8 +71,29 @@ a:hover .ic.arr{transform:translateX(3px)}
 .menu-panel{position:absolute;right:0;top:56px;background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:10px;display:flex;flex-direction:column;min-width:250px}
 .menu-panel a{padding:12px 14px;color:var(--text);text-decoration:none;font-weight:600;border-radius:10px}
 .menu-panel a:hover{background:var(--bg)}
+.top-in>.btn-book{white-space:nowrap}
+/* Services mega menu: one column per group + a "not sure" card. Opaque white panel, tint icon chips, pill Book button. */
+.has-mega{position:static}
+.has-mega>a{display:inline-flex;align-items:center;gap:3px}
+.has-mega>a .ic.chev{width:14px;height:14px;opacity:.6;transition:transform .2s}
+.mega{position:absolute;left:0;right:0;top:100%;background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);box-shadow:0 30px 60px rgba(15,63,102,.16);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s,visibility 0s .18s;z-index:41}
+.has-mega:hover .mega,.has-mega:focus-within .mega{opacity:1;visibility:visible;transform:none;transition-delay:0s}
+.has-mega:hover>a .ic.chev,.has-mega:focus-within>a .ic.chev{transform:rotate(180deg)}
+.mega-in{display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1.15fr;gap:32px;padding-top:30px;padding-bottom:34px}
+.mega-col{display:grid;align-content:start;gap:2px}
+.mega-h{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--deep);margin:0 0 8px;font-size:.92rem;line-height:1.25;letter-spacing:-.01em;min-height:46px}   /* same height whether the name wraps or not, so the link lists line up */
+.mega-h .sv-ic{width:36px;height:36px;border-radius:11px}
+.mega-h .sv-ic .ic{width:20px;height:20px}
+.nav .mega-col>a:not(.btn):not(.link){font-size:.9rem;font-weight:600;color:var(--text);padding:5px 8px;margin-left:-8px;border-radius:8px;background:none}
+.nav .mega-col>a:not(.btn):not(.link):hover,.nav .mega-col>a[aria-current]{background:var(--bg);color:var(--deep)}
+.mega-all{background:var(--bg);border-radius:var(--r);padding:22px;gap:12px;align-self:start}
+.mega-all .mega-h{margin:0}
+.mega-p{margin:0;font-size:.9rem;color:var(--muted)}
+.nav .mega .btn,.nav .mega .btn:hover{color:#fff;opacity:1;font-size:.95rem;background:var(--deep);padding:.7em 1.4em;justify-self:start}
+.nav .mega .btn:hover{background:var(--deeper)}
+.nav .mega .link,.nav .mega .link:hover{color:var(--accent-text);opacity:1;background:none;padding:0;font-size:.95rem}
 @media (max-width:1180px){.nav a{padding:8px 7px;font-size:.9rem}.tel span{display:none}}
-@media (max-width:1020px){.nav,.top-in>.tel{display:none}.menu{display:block}.top-in>.btn-book{margin-left:auto}}
+@media (max-width:1100px){.nav,.top-in>.tel{display:none}.menu{display:block}.top-in>.btn-book{margin-left:auto}}   /* collapse to the menu before anything can wrap */
 @media (max-width:640px){.util-addr{display:none}.brand img{width:150px}.top-in{min-height:64px;gap:10px}.top-in>.btn-book{min-height:44px;padding:.5em 1em}}
 
 /* hero: deep panel + real office photo, doctor cards overlapping */
