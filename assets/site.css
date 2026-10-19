@@ -393,3 +393,7 @@ a.ach:hover{border-color:var(--primary);color:var(--text)}
 .ins-grid{list-style:none;padding:0!important;margin:14px 0 18px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .ins-grid li{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 10px;text-align:center;font-weight:700;color:var(--deep);margin:0}
 @media (max-width:640px){.ins-grid{grid-template-columns:1fr 1fr}}
+
+/* hover pill on mega-menu links, Gunnell-style (Chris, Oct 19 2026) */
+.nav .mega-col>a:not(.btn):not(.link){padding:7px 10px;margin-inline:-10px;border-radius:8px;transition:background .15s,color .15s}
+.nav .mega-col>a:not(.btn):not(.link):hover,.nav .mega-col>a:not(.btn):not(.link)[aria-current]{background:#E3F3FB;color:var(--primary);text-decoration:none;opacity:1}
